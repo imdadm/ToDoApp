@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>My To Do App</h2>
+        <h2>My To Do App 2</h2>
         <ToDoItem/>
       </div>
     );
