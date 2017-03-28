@@ -13,7 +13,7 @@ export default class ToDoItem extends React.Component {
 
 const CompletedMessage = (props) => {
   if (!props.completed) {
-    return null
+    return <button> - Not Completed </button>
   }
 
   return (
