@@ -6,7 +6,9 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.ToDoItemInput{
+display:inline-block;
+}
 .App-header {
   background-color: #222;
   height: 50px;
@@ -17,6 +19,14 @@
 
 .App-intro {
   font-size: large;
+}
+
+Button {
+  Padding:6px;
+  margin:4px;
+  background-color: #008FE5;
+  color:white;
+  border-radius:10px;
 }
 
 @keyframes App-logo-spin {
