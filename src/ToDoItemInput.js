@@ -11,9 +11,17 @@ export default class ToDoItemInput extends React.Component {
   }
 }
 
+const AddToListButtonAction = () => {
+    return (
+      alert({} + "has been added to the list")
+    );
+
+  }
+
+
 const AddedMessage = (props) => {
   if (!props.added) {
-    return <button> Click to save </button>
+    return <button className ="ToDoItemInput" onClick={AddToListButtonAction}> Add to list </button>
   }
 
   return (
