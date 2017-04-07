@@ -1,22 +1,28 @@
 import React from 'react'
 
 export default class ToDoItem extends React.Component {
+
   render() {
     return (
       <div>
         {this.props.title}
-        <CompletedMessage completed={this.props.completed}/>
+        <RemovedMessage removed={this.props.removed}/>
       </div>
     )
   }
 }
+const RemovedFromListButtonAction = () => {
+    return (
+      alert({} + "has been removed from the list")
+    );
+}
 
-const CompletedMessage = (props) => {
-  if (!props.completed) {
-    return null
+const RemovedMessage = (props) => {
+  if (!props.removed) {
+    return <button className="ToDoItem" onClick={RemovedFromListButtonAction}> Remove </button>
   }
 
   return (
-    <span> - Completed </span>
+    <span> - Removed </span>
   )
 }

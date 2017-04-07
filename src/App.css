@@ -6,16 +6,53 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.ToDoItemInput{
+display:inline-block;
+}
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: #0d4e99;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Raleway';
+  font-size:20px;
+  height: 60px;
+  padding-top: 5px;
+  padding-bottom:20px;
+  margin-bottom: 20px;
+  align: center!important;
+
+}
+.MainComponent {
+  border:2px solid #565d6b;
+  background-color: transparent;
+  height: 460px;
+  padding: 0px;
+  margin-bottom: 40px;
+  margin:5%;
+  width:inherit;
+  align: center!important;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.ToDoItemInput {
+  Padding:5px;
+  margin:4px;
+  background-color: #0d9959;
+  color:white;
+  border-radius:10px;
+  margin-bottom:20px;
+
+}
+
+.ToDoItem {
+  Padding:6px;
+  margin:4px;
+  background-color: #C35E5E;
+  color:white;
+  border-radius:10px;
 }
 
 @keyframes App-logo-spin {
